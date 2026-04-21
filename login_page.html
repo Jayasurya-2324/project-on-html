@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #0f4c81, #1a73e8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Background abstract shapes */
+    .bg-shapes span {
+      position: absolute;
+      display: block;
+      border-radius: 50%;
+      opacity: 0.2;
+      filter: blur(30px);
+    }
+
+    .bg-shapes span:nth-child(1) {
+      width: 200px;
+      height: 200px;
+      background: #ffffff;
+      top: 10%;
+      left: 20%;
+    }
+
+    .bg-shapes span:nth-child(2) {
+      width: 300px;
+      height: 300px;
+      background: #00c6ff;
+      bottom: 10%;
+      right: 15%;
+    }
+
+    /* Glass Card */
+    .login-card {
+      width: 320px;
+      padding: 30px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      color: #fff;
+    }
+
+    .login-card h2 {
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .login-card input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .login-card input::placeholder {
+      color: #999;
+    }
+
+    .login-card .forgot {
+      font-size: 12px;
+      text-align: right;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+
+    .login-card button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background: #0d3b66;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-card button:hover {
+      background: #092a4d;
+    }
+
+    .divider {
+      margin: 15px 0;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+
+    .social-login {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .social-login button {
+      width: 30%;
+      background: #fff;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .register {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    .register span {
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="bg-shapes">
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="login-card">
+    <h3>Your Logo</h3>
+    <h2>Login</h2>
+
+    <input type="email" placeholder="username@gmail.com">
+    <input type="password" placeholder="Password">
+
+    <div class="forgot">Forgot Password?</div>
+
+    <button>Sign in</button>
+
+    <div class="divider">or continue with</div>
+
+    <div class="social-login">
+      <button>G</button>
+      <button>Git</button>
+      <button>F</button>
+    </div>
+
+    <div class="register">
+      Don’t have an account? <span>Register</span>
+    </div>
+  </div>
+
+</body>
+</html>
