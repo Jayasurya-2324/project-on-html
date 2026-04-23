@@ -17,10 +17,15 @@
             justify-content: center;
             align-items: center;
         }
+        body img{
+            width: 100px;
+            height: 100px;
+            background-color: transparent;
+        }
         .container1{
             margin:150px;
             padding: 40px;
-            height: 400px;
+            height: 450px;
             width: 600px;
             background:rgba(255, 255, 255, 0.1);
             border-radius: 50px;
@@ -39,7 +44,6 @@
             color: darkblue; 
         }
         .login h2{
-            margin: 20px;
             text-align: left;
             color: darkblue;
         }
@@ -70,34 +74,30 @@
             display: flex;
             justify-content: space-between;
         }
-           .social button {
-            width: 30%;
-            padding: 0;
+        .social button {
+            width: 25%;
+            padding: 15px;
             background: #fff;
-            color: #333;
-            font-size: 14px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
         }
-        .social button{
-            margin: 10px;
+        .social img{
+            width: 30px;
             height: 20px;
-            width:150;
-            background-color:white;
-            text-align: center;
-            color: black;
-
-
         }
         .register span{
             color:red;
 
         }
+
     </style>
 </head>
 <body>
     <div class="container1">
         <div class="login">
-            <h3 ,align="center">Your Logo</h3>
-            <h2 ,align="left">Login</h2>
+            <img src="login_logo.jpg">
+            <h2>Login</h2>
             <h4>Email</h4>
             <input type="email" placeholder="username@gmail.com">
             <h4>Password</h4>
@@ -110,9 +110,10 @@
             <div class="divider">or continue with</div>
 
             <div class="social">
-                <button>G</button>
-                <button>Git</button>
-                <button>F</button>
+                <button><img src="google.png" alt="G"></button>
+                <button><img src="github.png" alt="Git"></button> 
+                <button><img src="facebook.png" alt="f"></button>
+                <button><img src="instagram.jpg" alt="I"></button>
            </div>
 
     <div class="register">
